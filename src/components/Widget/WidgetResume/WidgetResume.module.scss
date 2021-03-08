@@ -1,0 +1,65 @@
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+.gridColumn {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+.gridColumn > div {
+  margin-bottom: 3em;
+}
+.wrapItemContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(134, 151, 168, 0.1);
+  }
+}
+.icon {
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
+}
+.skillTitle {
+  display: flex;
+  align-items: center;
+}
+.skillItems {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 1.5em 0;
+}
+.skills {
+  display: flex;
+  margin-bottom: 10px;
+}
+.skillItem {
+  display: flex;
+  align-items: center;
+}
+.skillsTitle {
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
