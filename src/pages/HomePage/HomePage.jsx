@@ -11,13 +11,11 @@ import { NavLink } from "react-router-dom";
 import Page from "../_layout/Page/Page";
 
 const HomePage = () => {
-
-
   return (
     <Page
       pageMeta={{
         title: "Dmitriy Polumiskov - Personal Website",
-        description: "title"
+        description: "title",
       }}
     >
       <Hello />

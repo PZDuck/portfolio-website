@@ -4,7 +4,7 @@ import BreadcrumbsWrap from "@material-ui/core/Breadcrumbs";
 import Typography from "@material-ui/core/Typography";
 import { NavLink } from "react-router-dom";
 
-const Breadcrumbs = ({ data, dashboard = false }) => {
+const Breadcrumbs = ({ data }) => {
   const breadcrumb = data.map((breadcrumbItem, index, currentValue) =>
     currentValue.length - 1 === index ? (
       <Typography color="textPrimary" key={index}>
@@ -24,12 +24,8 @@ const Breadcrumbs = ({ data, dashboard = false }) => {
 
   return (
     <BreadcrumbsWrap separator="›" aria-label="breadcrumb">
-      <Link
-        component={NavLink}
-        to={!dashboard ? "/" : "/admin/"}
-        color="inherit"
-      >
-        {!dashboard ? "Главная" : "Dashboard"}
+      <Link component={NavLink} to={"/"} color="inherit">
+        {"Home"}
       </Link>
       {breadcrumb}
     </BreadcrumbsWrap>

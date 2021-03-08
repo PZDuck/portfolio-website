@@ -10,14 +10,12 @@ import PageHome from "./pages/HomePage/HomePage";
 import AboutMePage from "./pages/AboutMePage/AboutMePage";
 
 class App extends Component {
-
   render() {
     return (
       <Router>
         <Switch>
           <Route exact path={ROUTES.HOME} component={PageHome} />
           <Route exact path={ROUTES.PORTFOLIO} component={PortfolioPage} />
-          <Route exact path={ROUTES.PORTFOLIO_PAG} component={PortfolioPage} />
           <Route
             path={ROUTES.PORTFOLIO_SINGLE}
             component={PortfolioSingleContainer}
@@ -30,6 +28,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;

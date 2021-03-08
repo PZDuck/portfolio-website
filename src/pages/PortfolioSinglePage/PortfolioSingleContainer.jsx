@@ -3,36 +3,35 @@ import PortfolioSinglePage from "./PortfolioSinglePage";
 import Breadcrumbs from "../../components/common/Breadcrumbs/Breadcrumbs";
 import Page from "../_layout/Page/Page";
 import { PORTFOLIO } from "../../constants/routes";
+import { useLocation } from "react-router-dom";
 
-class PortfolioSingleContainer extends React.Component {
+const PortfolioSingleContainer = () => {
+  let portfolioSingle = useLocation().state;
 
-  render() {
-    if (!this.props.portfolioSingle) return false;
-    const breadcrumbsConstructor = [
-      {
-        name: "Портфолио",
-        url: `${PORTFOLIO}`
-      },
-      {
-        name: `${this.props.portfolioSingle.title}`,
-        url: `${this.props.match.url}`
-      }
-    ];
+  const breadcrumbsConstructor = [
+    {
+      name: "Projects",
+      url: `${PORTFOLIO}`,
+    },
+    {
+      name: `${portfolioSingle.title}`,
+      url: `${portfolioSingle.url}`,
+    },
+  ];
 
-    return (
-      <Page
-        pageMeta={{
-          title: `${this.props.portfolioSingle.title}`,
-          description: "Бла бла бла"
-        }}
-      >
-        <PortfolioSinglePage
-          portfolioSingle={this.props.portfolioSingle}
-          breadcrumbs={<Breadcrumbs data={breadcrumbsConstructor} />}
-        />
-      </Page>
-    );
-  }
-}
+  return (
+    <Page
+      pageMeta={{
+        title: `${portfolioSingle.title}`,
+        description: "title",
+      }}
+    >
+      <PortfolioSinglePage
+        portfolioSingle={portfolioSingle}
+        breadcrumbs={<Breadcrumbs data={breadcrumbsConstructor} />}
+      />
+    </Page>
+  );
+};
 
-export default PortfolioSingleContainer
+export default PortfolioSingleContainer;

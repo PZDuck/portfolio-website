@@ -10,14 +10,14 @@ const PortfolioPage = () => {
     <Page
       pageMeta={{
         title: "My Projects",
-        description: "projects"
+        description: "projects",
       }}
     >
       <Box component="section" pt={8} pb={8} bgcolor="bgGrey">
         <Container>
           <Heading title={"My Projects"} subtitle="Portfolio" Tag={"h1"} />
           <div className="article-wrap">
-            <PortfolioListContainer limit={8} pagination={true} />
+            <PortfolioListContainer limit={8} />
           </div>
         </Container>
       </Box>

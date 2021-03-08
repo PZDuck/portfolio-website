@@ -13,21 +13,21 @@ import SchoolRoundedIcon from "@material-ui/icons/SchoolRounded";
 import HttpRoundedIcon from "@material-ui/icons/HttpRounded";
 import WidgetResumeContainer from "../../components/Widget/WidgetResume/WidgetResumeContainer";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     justifyContent: "center",
     flexWrap: "wrap",
     marginTop: "30px",
     "& > *": {
-      margin: theme.spacing(0.5)
-    }
+      margin: theme.spacing(0.5),
+    },
   },
   avatar: {
     margin: "1em auto",
     height: 200,
-    width: 200
-  }
+    width: 200,
+  },
 }));
 
 const AboutMePage = () => {
@@ -36,11 +36,11 @@ const AboutMePage = () => {
     <Page
       pageMeta={{
         title: "About Me",
-        description: "about"
+        description: "about",
       }}
     >
       <Box component="section" pt={8} pb={8} bgcolor="bgGrey">
-        <Container>        
+        <Container>
           <Avatar
             alt="ava"
             src="https://i.ibb.co/vjf4TbR/161499843828770798.jpg"
@@ -52,12 +52,12 @@ const AboutMePage = () => {
             Tag={"h1"}
           />
           <Typography align="center">
-            Hello there! I am Dmitriy Polumiskov. I am a Software Engineer and a 
-            Cybersecurity Specialist with a BBA Degree in Computer Information Systems.
-            I am a highly driven individual and I seek out challenges within each 
-            position and create innovative solutions. In my own time I enjoy developing 
-            and deploying small web applications for various use purposes, generally for 
-            personal convenience.
+            Hello there! I am Dmitriy Polumiskov. I am a Software Engineer and a
+            Cybersecurity Specialist with a BBA Degree in Computer Information
+            Systems. I am a highly driven individual and I seek out challenges
+            within each position and create innovative solutions. In my own time
+            I enjoy developing and deploying small web applications for various
+            use purposes, generally for personal convenience.
           </Typography>
           <div className={classes.root}>
             <Chip
@@ -85,7 +85,7 @@ const AboutMePage = () => {
       </Box>
       <Box component="section" pt={8} pb={8}>
         <Container>
-          <Heading title={"My Resume"} subtitle="resume" Tag={"h2"} />
+          <Heading title={"My Skills"} Tag={"h2"} />
           <WidgetResumeContainer />
         </Container>
       </Box>
