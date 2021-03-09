@@ -4,6 +4,8 @@ export default [
     img: "https://i.ibb.co/jZk0CzD/gw.png",
     url: "https://vigilant-mirzakhani-9a09f1.netlify.app/",
     page_url: "webgwent",
+    thumbnail:
+      "A web-based version of Gwent - popular The Witcher 3 card game. Built with Node.js and React, WebGwent includes an internal rating system and a custom matchmaker",
     description: [
       "Deployed a web-based version of Gwent, the popular Witcher 3 card game",
       "Designed and implemented the player queue system, game models and matching algorithm with Node.js",
@@ -23,7 +25,8 @@ export default [
     img: "https://i.ibb.co/VNZDn5T/rawg1.png",
     url: "https://fathomless-retreat-05089.herokuapp.com/",
     page_url: "rawg",
-
+    thumbnail:
+      "A web application that allows an extensive search for video games by utilizing the API of the largest video game database",
     description: [
       "Developed a CRUD web application that allows an extensive search for video games by utilizing the API of the largest video game database",
       "Designed and implemented the backend logic with a lightweight WSGI web application framework for Python",
@@ -41,6 +44,8 @@ export default [
     img: "https://i.ibb.co/5LwPrMk/wr.png",
     url: "thawing-spire-34431.herokuapp.com/",
     page_url: "warbler",
+    thumbnail:
+      "A simple Twitter clone application built with Python Flask. Includes custom authentication system, following other users, tweeting posts and profile customization",
     description: [
       "Created a trivial Twitter clone application with Python that mimics the website’s basic logic such as authentication system, posting tweets, following other users and liking messages",
       "Created and designed a schema for a database using PostgreSQL",
@@ -58,6 +63,8 @@ export default [
     img: "https://i.ibb.co/rfvQ9fV/grad.png",
     url: "http://67.205.173.77:8000/",
     page_url: "gradient",
+    thumbnail:
+      "A non-profit course-based learning platform that aggregates and translates open source learning materials for Russian/Uzbek speaking community built in collaboration with another developer",
     description: [
       "Collaborated with other developers to build a non-profit course-based learning platform that aggregates and translates open source learning materials for Russian/Uzbek speaking community",
       "Designed data models, created ERD and database tables in PostgreSQL",

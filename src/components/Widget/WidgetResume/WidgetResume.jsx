@@ -44,6 +44,16 @@ const WidgetResume = () => {
   const skills = [
     {
       _id: 1,
+      icon: <SiPython />,
+      name: "Python",
+      elements: [
+        { name: "Flask", icon: <SiFlask /> },
+        { name: "Django", icon: <SiDjango /> },
+        { name: "Jupyter Notebooks", icon: <SiJupyter /> },
+      ],
+    },
+    {
+      _id: 2,
       icon: <SiJavascript />,
       name: "JavaScript",
       elements: [
@@ -59,16 +69,6 @@ const WidgetResume = () => {
       ],
     },
     {
-      _id: 2,
-      icon: <SiPython />,
-      name: "Python",
-      elements: [
-        { name: "Flask", icon: <SiFlask /> },
-        { name: "Django", icon: <SiDjango /> },
-        { name: "Jupyter Notebooks", icon: <SiJupyter /> },
-      ],
-    },
-    {
       _id: 3,
       icon: <SiMdnwebdocs />,
       name: "Web Development",
@@ -81,17 +81,6 @@ const WidgetResume = () => {
     },
     {
       _id: 4,
-      icon: <FaDatabase />,
-      name: "Databases",
-      elements: [
-        { name: "PostgreSQL", icon: <SiPostgresql /> },
-        { name: "MySQL", icon: <SiMysql /> },
-        { name: "MongoDB", icon: <SiMongodb /> },
-        { name: "Redis", icon: <SiRedis /> },
-      ],
-    },
-    {
-      _id: 5,
       icon: <FaTools />,
       name: "Other",
       elements: [
@@ -101,6 +90,17 @@ const WidgetResume = () => {
         { name: "Google Cloud", icon: <SiGooglecloud /> },
         { name: "Heroku", icon: <SiHeroku /> },
         { name: "Netlify", icon: <SiNetlify /> },
+      ],
+    },
+    {
+      _id: 5,
+      icon: <FaDatabase />,
+      name: "Databases",
+      elements: [
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "Redis", icon: <SiRedis /> },
       ],
     },
   ];

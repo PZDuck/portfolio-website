@@ -4,6 +4,7 @@ import Hello from "../../components/Hello/Hello";
 import WidgetFeedback from "../../components/Widget/WidgetFeedback/WidgetFeedback";
 import WidgetPortfolioContainer from "../../components/Widget/WidgetPortfolio/WidgetPortfolioContainer";
 import WidgetResumeContainer from "../../components/Widget/WidgetResume/WidgetResumeContainer";
+import WidgetResumeDocument from "../../components/Widget/WidgetResumeDocument/WidgetResumeDocument";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
@@ -31,10 +32,14 @@ const HomePage = () => {
               color="primary"
               to="/portfolio"
             >
-              My Projects
+              All Projects
             </Button>
           </Box>
         </Container>
+      </Box>
+
+      <Box component="section" pt={8} pb={8}>
+        <WidgetResumeDocument />
       </Box>
 
       <Box component="section" pt={8} pb={8} bgcolor="bgGrey">
