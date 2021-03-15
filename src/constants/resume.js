@@ -7,14 +7,16 @@ export default [
     type: "word",
     name: "Word",
     icon: wordIcon,
-    url: "https://srv-store1.gofile.io/download/WQGGd3/Dmitriy_CV_doc.docx",
+    url:
+      "https://drive.google.com/file/d/1lYJsQ217qotSzlJVWWV6a4--MPG16bP4/view?usp=sharing",
     size: "18 KB",
   },
   {
     type: "pdf",
     name: "PDF",
     icon: pdfIcon,
-    url: "https://srv-store1.gofile.io/download/WQGGd3/Dmitriy_CV_doc.pdf",
+    url:
+      "https://drive.google.com/file/d/1ruCP5llcVUGi_EqTHCFGgW1DlGV_RV6I/view",
     size: "37 KB",
   },
   {

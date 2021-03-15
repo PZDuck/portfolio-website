@@ -21,7 +21,13 @@ import PersonIcon from "@material-ui/icons/Person";
 import DescriptionIcon from "@material-ui/icons/Description";
 import FeedbackIcon from "@material-ui/icons/Feedback";
 
-import { HOME, PORTFOLIO, FEEDBACK, ABOUTME } from "../../../constants/routes";
+import {
+  HOME,
+  PORTFOLIO,
+  FEEDBACK,
+  ABOUTME,
+  RESUME,
+} from "../../../constants/routes";
 
 const drawerWidth = 200;
 
@@ -118,17 +124,27 @@ const Header = () => {
           {[
             { name: "Home", icon: <HomeIcon />, link: HOME },
             { name: "Projects", icon: <AssignmentIcon />, link: PORTFOLIO },
-            { name: "Resume", icon: <DescriptionIcon />, link: HOME },
+            { name: "Resume", icon: <DescriptionIcon />, link: RESUME },
             { name: "About Me", icon: <PersonIcon />, link: ABOUTME },
             { name: "Feedback", icon: <FeedbackIcon />, link: FEEDBACK },
           ].map((item) => (
-            <ListItem button key={item.name}>
-              <NavLink to={item.link} className={classes.link}>
-                <ListItemIcon>{item.icon}</ListItemIcon>
-
-                <ListItemText primary={item.name} />
-              </NavLink>
-            </ListItem>
+            <>
+              {item.name === "Resume" ? (
+                <ListItem button key={item.name}>
+                  <a href={item.link} className={classes.link}>
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.name} />
+                  </a>
+                </ListItem>
+              ) : (
+                <ListItem button key={item.name}>
+                  <NavLink to={item.link} className={classes.link}>
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.name} />
+                  </NavLink>
+                </ListItem>
+              )}{" "}
+            </>
           ))}
         </List>
       </Drawer>
